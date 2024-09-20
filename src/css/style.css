@@ -47,3 +47,7 @@ button:hover{
     color: rgb(224, 202, 124);
 
 }
+
+button:focus {
+    outline: none;
+}
