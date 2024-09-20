@@ -24,8 +24,12 @@ function showQuestion() {
 }
 
 function guess(answer) {
-    quiz.guess(answer)
-    showQuestion()
+    const currentQuestion = quiz.getCurrentQuestion();
+    if (answer !== currentQuestion.answer) {
+        alert(`Você errou! A resposta correta para a pergunta "${currentQuestion.text}" é "${currentQuestion.answer}".`);
+    }
+    quiz.guess(answer);
+    showQuestion();
 }
 
 function showScores() {
