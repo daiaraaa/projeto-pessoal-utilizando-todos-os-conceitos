@@ -24,12 +24,12 @@ function showQuestion() {
 }
 
 function guess(answer) {
-    const currentQuestion = quiz.getCurrentQuestion();
+    const currentQuestion = quiz.getCurrentQuestion()
     if (answer !== currentQuestion.answer) {
-        alert(`Você errou! A resposta correta para a pergunta "${currentQuestion.text}" é "${currentQuestion.answer}".`);
+        alert(`Você errou! A resposta correta para a pergunta "${currentQuestion.text}" é "${currentQuestion.answer}".`)
     }
-    quiz.guess(answer);
-    showQuestion();
+    quiz.guess(answer)
+    showQuestion()
 }
 
 function showScores() {
